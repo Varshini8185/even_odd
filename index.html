@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+  <h1>Checking the number Even or Odd</h1>
+    <form id="box" onsubmit="checkEvenOdd(event)">
+        <label for="int">Enter a number :</label><br><br>
+       <input type="text" id="int" required>
+       <br><br><button type="submit">check</button>
+    </form>
+    <p id="result"></p>
+    <script>
+        function checkEvenOdd(event){
+            event.preventDefault();
+
+
+          let number=document.getElementById("int").value;
+          let result=document.getElementById("result");
+          number = parseInt(number);
+
+          if(isNaN(number)){
+            result.innerHTML=" It is not a number";
+          }
+           else if(number % 2 === 0){
+            result.innerHTML= number + " is an Even number"; 
+          }
+          else{
+            result.innerHTML=number + " is a odd number";
+          }
+        }
+    </script>
+</body>
+</html>

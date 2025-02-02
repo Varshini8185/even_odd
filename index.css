@@ -1,0 +1,15 @@
+#box{
+    border: 2px solid black;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    height: 150px;
+    margin: 40px auto;
+    background: rgb(147, 152, 75);
+}
+h1{
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(92, 207, 245);
+}
