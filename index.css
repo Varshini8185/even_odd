@@ -16,3 +16,9 @@ button:hover{
 body{
     text-align: center;
 }
+form input:hover{
+    background-color: rgb(231, 200, 128);
+}
+form input{
+    background-color: rgb(169, 203, 253);
+}
